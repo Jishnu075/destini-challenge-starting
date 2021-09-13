@@ -50,7 +50,8 @@ class _StoryPageState extends State<StoryPage> {
                 flex: 2,
                 child: TextButton(
                   style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(Colors.white)),
+                      backgroundColor:
+                          MaterialStateProperty.all(Colors.redAccent)),
                   onPressed: () {
                     //Choice 1 made by user.
                     setState(() {
@@ -61,6 +62,7 @@ class _StoryPageState extends State<StoryPage> {
                   child: Text(
                     storyBrain.getChoice1(),
                     style: TextStyle(
+                      color: Colors.white,
                       fontSize: 20.0,
                     ),
                   ),
